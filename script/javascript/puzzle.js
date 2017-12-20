@@ -16,7 +16,7 @@ function onReady() {
 ctx = can.getContext('2d');
 img = new Image();
 img.onload = onImage1Load;
-img.src="../Puzzle1/img/puzzle/file1.jpg";
+img.src="img/puzzle/file1.jpg";
 }
 
 function onImage1Load() {
@@ -101,7 +101,7 @@ function checkWinner() {
     }
   }
   if (match) {
-    console.log('Complete!');
+    alert('Complete!');
   }
   else {
     console.log('Not Complete.');
