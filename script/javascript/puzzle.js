@@ -11,6 +11,8 @@ var blockSize = 160;
 var piecesArray = new Array();
 var correctOrder = new Array();
 
+
+
 function onReady() {
   can = document.getElementById('myCanvas');
 ctx = can.getContext('2d');
@@ -25,6 +27,7 @@ function onImage1Load() {
     for(var j = 0; j < 3; j++) {
       r = new Rectangle(i * blockSize, j * blockSize, i*blockSize + blockSize, j*blockSize + blockSize);
       piecesArray.push(r);
+      correctOrder.push(r);
     }
   }
 scrambleArray(piecesArray, 30);
